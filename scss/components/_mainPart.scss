@@ -1,0 +1,41 @@
+.main{
+    background: #FAFBFF;
+width: 100vw;
+height: 100vh;
+
+}
+
+@media (min-width: 1200px) {
+    .main{
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+        
+    }
+}
+
+.main-title__thumb{
+    display: flex;
+align-items: center;
+justify-content: flex-start;
+width: 100%;
+background: #FAFBFF;
+}
+
+.main-title{
+    color: #000;
+font-family: Poppins, sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+@media (min-width: 1200px) {
+    .main-title{
+    margin-left: 80px;
+    }
+}
+
