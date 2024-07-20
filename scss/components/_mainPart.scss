@@ -5,7 +5,7 @@ height: 100vh;
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
     .main{
     display: flex;
 align-items: flex-start;
@@ -36,6 +36,12 @@ margin-left: 20px;
 @media (min-width: 1200px) {
     .main-title{
     margin-left: 80px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .main-title{
+    margin-left: 200px;
     }
 }
 

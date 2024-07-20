@@ -5,35 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRM</title>
     <link rel="icon" href="./images/title.svg" type="image/svg">
-    <link rel="stylesheet" type="text/css" href="./css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
 
     <header class="header">
-        
-            <svg class="header__icon">
-                <use xlink:href="./images/symbol-defs.svg#icon-title"></use>
-            </svg>
-            <h2 class="header__title">Dashboard <span class="dashboard__subtitle">v.01</span></h2>
-
-            <div id="nav-icon3">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="container">
+            <div class="header__logo-thumb">
+                <svg class="header__icon">
+                    <use xlink:href="./images/symbol-defs.svg#icon-title"></use>
+                </svg>
+                <h2 class="header__title">Dashboard <span class="dashboard__subtitle">v.01</span></h2>
             </div>
+                
+    
+                <img id="nav-icon3" style="width: 32px;" src="images/menu.svg" alt="">
+        </div>
+        
+            <!-- <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
             
     </header>
 
 
     <main class="main">
 
-        <aside class="aside-menu__mob">
+        <aside class="aside-menu__mob ">
             
              <ul id="menu" class="list-menu__thumb menu">
 
@@ -131,7 +138,7 @@
         </aside>
 
 
-        <aside class="aside-menu__web">
+        <aside id="sidebar" class="aside-menu__web " data-aos="fade-right">
 
             <div class="dashboard__title-thumb">
                 <svg class="dashboard__icon">
@@ -228,11 +235,11 @@
 
     <section class="hero-thumb">
 
-        <div class="main-title__thumb">
+        <div class="main-title__thumb" data-aos="fade-left">
             <h1 class="main-title">Hello Evano 👋🏼,</h1>
         </div>
 
-        <section class="hero-section">
+        <section class="hero-section " data-aos="fade-left">
         
             <div class="hero-section__input-thumb">
                 <div class="hero-section__tittle-thumb">
@@ -296,8 +303,12 @@
 </main>
 
     <script src="./js/mobileMenu.js"></script>
-    <script src="./js/buttonTogle.js"></script>
+    <!-- <script src="./js/buttonTogle.js"></script> -->
     <script src="./js/table.js"></script>
-
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
